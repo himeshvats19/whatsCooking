@@ -1,0 +1,222 @@
+body {
+  background:#f3f3f3;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #2c3e50;
+  height: 90px;
+  padding: 30px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.recipe_buttons {
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+.recipes__box {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+  text-align: left;
+  overflow: hidden;
+  background-size: cover !important;
+}
+
+.recipe__text {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  height: 300px;
+  position: relative;
+}
+
+.recipes__title {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1.8rem 0 0.2rem 0;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  font-weight: 200;
+  font-family: 'Calligraffitti', cursive;
+}
+
+.recipes__subtitle {
+  text-transform: capitalize;
+  font-weight: 200;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  color: #fff;
+}
+
+.recipes__subtitle span {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.form__input {
+  background: transparent;
+  border: 0;
+  border-bottom: solid 1px #2c3e504d;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  width: 30%;
+  padding: 0.4rem;
+  font-size: 35px;
+  margin-top: 300px;
+  text-align: center;
+}
+
+.form__button {
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 20px 100px 20px 100px;
+    display: block;
+    background: #fff;
+    border: 0;
+    border-radius: 100px;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-top: 20px;
+    box-shadow: 5px 5px 20px #00000030;
+    cursor: pointer;
+}
+
+input[type="text"] { 
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset;
+  -webkit-text-fill-color: #2c3e50 !important;
+}
+
+/******** RECIPE.js ********/
+
+.active-recipe {
+  margin: 0 auto;
+}
+
+.active-recipe__img {
+    height: 500px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+    text-align: left;
+    overflow: hidden;
+}
+
+.active-recipe__title {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+  font-family: 'Calligraffitti', cursive;
+}
+
+.active-recipe__publisher, .active-recipe__website {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.active-recipe__publisher span {
+  font-weight: 300;
+}
+
+.active-recipe__website span {
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #e74c3c;
+  margin-left: 10px;
+}
+
+.active-recipe__button {
+  font-size: 1rem;
+  padding: 20px 100px 20px 100px;
+  display: block;
+  background: #fff;
+  border: 0;
+  border-radius: 100px;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-top: 20px;
+  -webkit-box-shadow: 5px 5px 20px #00000030;
+  box-shadow: 5px 5px 20px #00000030;
+  cursor: pointer;
+  font-family: 'Calligraffitti', cursive;
+}
+.active-recipe__button a{
+  color: #000;
+}
+
+.backdrop{
+  width: 100%;
+  height: 600px;
+  background: url('./img/3.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Calligraffitti', cursive;
+}
+.result-container{
+  padding-top: 100px;
+  width: 100%;
+  height: 1500px;
+  background: url('./img/2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.active-container{
+  padding-top: 100px;
+  background: url('./img/1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1080px;
+  width: 100%;
+}
+.active-container .row{
+  background: #fff;
+  padding: 100px;
+}
+
+
+
+@media (min-width: 576px) {
+  .active-container .row{
+    padding: 10px;
+  }
+  
+}
