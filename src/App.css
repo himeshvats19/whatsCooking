@@ -214,9 +214,22 @@ input:-webkit-autofill {
 
 
 
-@media (min-width: 576px) {
+@media (max-width: 992px) { 
   .active-container .row{
     padding: 10px;
   }
+  .col-lmd-6{
+    padding: 30px;
+  }
+  .active-recipe__button {
+    padding: 10px 50px 10px 50px;
+    margin: 0 auto;
+  }
   
+}
+@media (max-width: 480px) { 
+  .form__input {
+    width: 90%;
+    font-size: 25px;
+  }
 }
