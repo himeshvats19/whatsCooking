@@ -14,7 +14,7 @@ class App extends Component {
   getRecipe = async (e) => {
     const recipeName = e.target.elements.recipeName.value;
     e.preventDefault();
-    const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=9`);
+    const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=9`, {mode: 'no-cors'});
     const data = await api_call.json();
     this.setState({recipes: data.recipes});
     window.scrollTo({
